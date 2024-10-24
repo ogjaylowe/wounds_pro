@@ -86,7 +86,7 @@ export default function Home() {
     woundProb = calculateWithReroll(woundProb, rerollAllWounds, rerollWoundsOfOne);
 
     // Calculate save probability
-    var saveProb = 0
+    let saveProb = 0
     if (improvedAP) {
       saveProb = calculateProbability(savingThrow + 1);
     } else {
